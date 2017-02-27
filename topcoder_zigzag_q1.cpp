@@ -6,7 +6,7 @@ using namespace std;
 int max(int a, int b) { return (a > b) ? a : b; }
 
 // Function to return longest Zig-Zag subsequence length
-int zzis(int arr[], int n)
+int zigzag(int arr[], int n)
 {
 	/*Z[i][0] = Length of the longest Zig-Zag subsequence
 		ending at index i and last element is greater
@@ -51,7 +51,7 @@ int main()
 	int arr[n];
 	for(int i=0;i<n;i++)
 	cin>>arr[i];
-	cout<<"Length of longest zigzag subsequence is "<<zzis(arr, n);
+	cout<<"Length of longest zigzag subsequence is "<<zigzag(arr, n);
 	return 0;
 }
 
